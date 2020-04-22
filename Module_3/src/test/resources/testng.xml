@@ -19,33 +19,18 @@
     </test>
 
     <test name="Div Calculation Test">
-        <groups>
-            <run>
-                <exclude name="Exceptions"/>
-            </run>
-        </groups>
         <classes>
             <class name="com.epam.tests.testng.DivCalculatorTest"/>
         </classes>
     </test>
 
     <test name="Pow Calculation Test">
-        <groups>
-            <run>
-                <exclude name="Exceptions"/>
-            </run>
-        </groups>
         <classes>
             <class name="com.epam.tests.testng.PowCalculatorTest"/>
         </classes>
     </test>
 
     <test name="Sqrt Calculation Test">
-        <groups>
-            <run>
-                <exclude name="Exceptions"/>
-            </run>
-        </groups>
         <classes>
             <class name="com.epam.tests.testng.SqrtCalculatorTest"/>
         </classes>

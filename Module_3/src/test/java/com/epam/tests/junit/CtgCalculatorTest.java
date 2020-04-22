@@ -12,7 +12,6 @@ class CtgCalculatorTest extends BaseTest {
     @MethodSource("valuesForCtg")
     void CtgTest(double a, double expectedValue) {
         double result = calculator.ctg(a);
-        System.out.println(Math.cos(a)/Math.sin(a));
         Assertions.assertEquals(expectedValue, result, "Invalid result of ctg operation!");
     }
 
