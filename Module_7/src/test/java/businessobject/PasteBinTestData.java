@@ -1,4 +1,4 @@
-package test.business.object;
+package businessobject;
 
 public class PasteBinTestData {
     private String code;

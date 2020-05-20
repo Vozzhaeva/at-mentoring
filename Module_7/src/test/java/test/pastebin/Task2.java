@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import pages.pastebin.PastebinPage;
 import pages.pastebin.ResultPastebinPage;
 import test.BaseTest;
-import test.business.object.PasteBinTestData;
+import businessobject.PasteBinTestData;
 
 public class Task2 extends BaseTest {
 
