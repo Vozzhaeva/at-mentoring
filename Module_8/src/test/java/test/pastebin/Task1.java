@@ -21,7 +21,8 @@ public class Task1 extends BaseTest {
      */
     @Test(dataProvider = "dataProvider")
     public void newPasteCreate(PasteBinTestData testData) {
-        IPastebinPage pastebinPage = new PastebinPageReportDecorator(new PastebinPageReportDecorator(new PastebinPage(driver)));
+        IPastebinPage pastebinPage =
+                new PastebinPageReportDecorator(new PastebinPage(driver));
         boolean isPasteCreatedSuccessfully = pastebinPage
                 .openPage()
                 .enterCode(testData.getCode())
