@@ -5,6 +5,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.pastebin.PastebinPage;
 import pages.pastebin.PastebinPageDecorator;
+import pages.pastebin.PastebinPageReportDecorator;
 import pages.pastebin.ResultPastebinPage;
 import test.BaseTest;
 import businessobject.PasteBinTestData;
@@ -29,7 +30,7 @@ public class Task2 extends BaseTest {
     @Test(dataProvider = "dataProvider")
     public void newPasteCreate(PasteBinTestData testData) {
 
-        ResultPastebinPage resultPastebinPage = new PastebinPageDecorator(new PastebinPage(driver))
+        ResultPastebinPage resultPastebinPage = new PastebinPageReportDecorator(new PastebinPage(driver))
                 .openPage()
                 .enterCode(testData.getCode())
                 .enterValueSyntaxField(testData.getSyntaxName())

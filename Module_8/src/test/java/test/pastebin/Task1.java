@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import pages.pastebin.IPastebinPage;
 import pages.pastebin.PastebinPage;
 import pages.pastebin.PastebinPageDecorator;
+import pages.pastebin.PastebinPageReportDecorator;
 import test.BaseTest;
 import businessobject.PasteBinTestData;
 
@@ -20,7 +21,7 @@ public class Task1 extends BaseTest {
      */
     @Test(dataProvider = "dataProvider")
     public void newPasteCreate(PasteBinTestData testData) {
-        IPastebinPage pastebinPage = new PastebinPageDecorator(new PastebinPage(driver));
+        IPastebinPage pastebinPage = new PastebinPageReportDecorator(new PastebinPageReportDecorator(new PastebinPage(driver)));
         boolean isPasteCreatedSuccessfully = pastebinPage
                 .openPage()
                 .enterCode(testData.getCode())
